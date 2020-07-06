@@ -1,4 +1,4 @@
-package com.example.demo.resource.dto;
+package com.example.demo.controller.dto;
 
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -7,8 +7,8 @@ import org.springframework.data.domain.Sort;
 public class RequestPagingDto {
     int page = 0;
     int size = 100;
-    String sortBy;
-    String sort;
+    String sortBy = "id";
+    String sort = Sort.Direction.DESC.toString();
 
     public void setPage(int page) {
         this.page = page;
